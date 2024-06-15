@@ -28,7 +28,7 @@ const LazyMain = () => {
         <span className="main__wrapper--text02">Кликните ниже и начните исследовать Мир с главной страницы нашего сайта!</span>
         <Link className="main__wrapper--button" to='/home'>Вперёд!</Link>
       </div>
-      <img className="main__image" src={image} alt='image' />
+      <img className="main__image" src={image} />
     </main>
   )
 }

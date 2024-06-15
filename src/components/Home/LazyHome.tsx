@@ -70,11 +70,11 @@ const LazyHome = () => {
           <Link to={`${el.id}`} key={el.id} style={{ textDecoration: 'none'}}>
             <div className="home__cities--el">
               <div className="home__cities--el--image">
-                <img className="home__cities--el--image--el" src={el.image} alt="City" />
+                <img className="home__cities--el--image--el" src={el.image} />
               </div>
               <span className="home__cities--el--title">{el.title}</span>
               <span className="home__cities--el--country">{el.country}</span>
-              <img className="home__cities--el--flag" src={el.flag} alt="flag" />
+              <img className="home__cities--el--flag" src={el.flag} />
               <p className="home__cities--el--description">{el.description}</p>
               <button className='home__cities--el--button'>ПЕРЕЙТИ</button>
             </div>
