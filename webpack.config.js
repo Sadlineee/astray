@@ -1,5 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const webpack = require('webpack')
 
 module.exports = {
   entry: './src/index.tsx',
@@ -42,6 +43,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './public/index.html',
       favicon: './public/favicon.png'
+    }),
+    new webpack.DefinePlugin({
+      'process.env.REACT_APP_WEATHER_API': JSON.stringify(process.env.REACT_APP_WEATHER_API),
     })
   ],
   devServer: {
