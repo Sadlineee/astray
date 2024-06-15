@@ -1,0 +1,57 @@
+$main-font: 'Roboto Condensed', sans-serif;
+$color01: #FFFFFF;
+$color02: #2F3540;
+$color03: #F5A623;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: $main-font;
+    font-optical-sizing: auto;
+    background: $color01;
+    
+    &::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: $color01;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $color02;
+    }
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+
+    &__el {
+        width: 2.5rem;
+        border: 3px solid;
+        border-radius: 50%;
+        border-color: $color03 $color01;
+        animation: l1 1s infinite;
+        aspect-ratio: 1;
+
+        @keyframes l1 {
+            to { transform: rotate(.5turn) }
+        }
+    }
+}
+
+@import './styles/Header/Header.scss';
+// @import './styles/AboutUs/AboutUs.scss';
+@import './styles/Main/Main.scss';
+@import './styles/Home/Home.scss';
+@import './styles/Footer/Footer.scss';
+@import './styles/Cities/City.scss';
