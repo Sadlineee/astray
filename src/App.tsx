@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Main from './components/Main/Main'
+import AboutUs from './components/AboutUs/AboutUs'
 import Home from './components/Home/Home'
 
 import London from './components/Cities/London/London'
@@ -36,6 +37,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route path='/astray' element={ <Main /> } />
+        <Route path='/about-us' element={ <AboutUs /> } />
         <Route path='/home' element={ <Home /> } />
 
         <Route path='/home/1' element={ <London /> } />
