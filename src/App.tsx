@@ -12,6 +12,11 @@ import HydePark from './components/Cities/London/HydePark/HydePark'
 import BritishMuseum from './components/Cities/London/BritishMuseum/BritishMuseum'
 import PalaceOfWestminster from './components/Cities/London/PalaceOfWestminster/PalaceOfWestminster'
 import TowerOfLondon from './components/Cities/London/TowerOfLondon/TowerOfLondon'
+import LondonEye from './components/Cities/London/LondonEye/LondonEye'
+import TrafalgarSquare from './components/Cities/London/TrafalgarSquare/TrafalgarSquare'
+import CoventGarden from './components/Cities/London/CoventGarden/CoventGarden'
+import NationalGallery from './components/Cities/London/NationalGallery/NationalGallery'
+import KensingtonPalace from './components/Cities/London/KensingtonPalace/KensingtonPalace'
 
 import Istanbul from './components/Cities/Istanbul/Istanbul'
 import Ayasofya from './components/Cities/Istanbul/Ayasofya/Ayasofya'
@@ -32,6 +37,10 @@ import Sensoji from './components/Cities/Tokyo/Sensoji/Sensoji'
 import TokyoTower from './components/Cities/Tokyo/TokyoTower/TokyoTower'
 import Akihabara from './components/Cities/Tokyo/Akihabara/Akihabara'
 
+import Munich from './components/Cities/Munich/Munich'
+import Marienplatz from './components/Cities/Munich/Marienplatz/Marienplatz'
+import SchlossNymphenburg from './components/Cities/Munich/SchlossNymphenburg/SchlossNymphenburg'
+
 const App = () => {
   return(
     <Router>
@@ -47,6 +56,11 @@ const App = () => {
         <Route path='/home/1/4' element={ <BritishMuseum /> } />
         <Route path='/home/1/5' element={ <PalaceOfWestminster /> } />
         <Route path='/home/1/6' element={ <TowerOfLondon /> } />
+        <Route path='/home/1/7' element={ <LondonEye /> } />
+        <Route path='/home/1/8' element={ <TrafalgarSquare /> } />
+        <Route path='/home/1/9' element={ <CoventGarden /> } />
+        <Route path='/home/1/10' element={ <NationalGallery /> } />
+        <Route path='/home/1/11' element={ <KensingtonPalace /> } />
 
         <Route path='/home/2' element={ <Istanbul /> } />
         <Route path='/home/2/1' element={ <Ayasofya /> } />
@@ -66,6 +80,10 @@ const App = () => {
         <Route path='/home/4/1' element={ <Sensoji /> } />
         <Route path='/home/4/2' element={ <TokyoTower /> } />
         <Route path='/home/4/3' element={ <Akihabara /> } />
+
+        <Route path='/home/5' element={ <Munich /> } />
+        <Route path='/home/5/1' element={ <Marienplatz /> } />
+        <Route path='/home/5/2' element={ <SchlossNymphenburg /> } />
       </Routes>
     </Router>
   )

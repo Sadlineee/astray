@@ -7,6 +7,11 @@ import HydePark from '../../../data/images/cities/London/HydePark/4.jpg'
 import BritishMuseum from '../../../data/images/cities/London/BritishMuseum/4.jpg'
 import PalaceOfWestminster from '../../../data/images/cities/London/PalaceOfWestminster/4.jpg'
 import TowerOfLondon from '../../../data/images/cities/London/TowerOfLondon/4.jpg'
+import LondonEye from '../../../data/images/cities/London/LondonEye/3.jpg'
+import TrafalgarSquare from '../../../data/images/cities/London/TrafalgarSquare/1.jpg'
+import CoventGarden from '../../../data/images/cities/London/CoventGarden/3.jpg'
+import NationalGallery from '../../../data/images/cities/London/NationalGallery/3.jpg'
+import KensingtonPalace from '../../../data/images/cities/London/KensingtonPalace/5.jpg'
 
 interface Attractions {
   id: number
@@ -63,6 +68,46 @@ const attractions: Attractions [] = [
     title: 'Лондонский Тауэр',
     translation: 'Tower of London',
     rating: 4.6
+  },
+
+  { 
+    id: 7,
+    image: LondonEye,
+    title: 'Лондонский глаз',
+    translation: 'London Eye',
+    rating: 4.5
+  },
+
+  { 
+    id: 8,
+    image: TrafalgarSquare,
+    title: 'Трафальгарская площадь',
+    translation: 'Trafalgar Square',
+    rating: 4.6
+  },
+
+  { 
+    id: 9,
+    image: CoventGarden,
+    title: 'Ковент-Гарден',
+    translation: 'Covent Garden',
+    rating: 4.5
+  },
+
+  {
+    id: 10,
+    image: NationalGallery,
+    title: 'Национальная галерея',
+    translation: 'National Gallery',
+    rating: 4.8
+  },
+
+  {
+    id: 11,
+    image: KensingtonPalace,
+    title: 'Кенсингтонский дворец',
+    translation: 'Kensington Palace',
+    rating: 4.4
   },
 ]
 

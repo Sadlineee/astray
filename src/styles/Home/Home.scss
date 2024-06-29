@@ -134,7 +134,7 @@
                     padding: 0.5rem;
                     height: 100%;
                     width: 75%;
-                    font-family: $main-font;
+                    @include main-font();
                     font-size: 1.25rem;
                     font-weight: 300;
                     color: $color02;

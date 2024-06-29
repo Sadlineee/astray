@@ -1,4 +1,9 @@
-$main-font: 'Roboto Condensed', sans-serif;
+@mixin main-font() {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
 $color01: #FFFFFF;
 $color02: #2F3540;
 $color03: #F5A623;
@@ -11,8 +16,7 @@ $color03: #F5A623;
 
 body {
     min-height: 100vh;
-    font-family: $main-font;
-    font-optical-sizing: auto;
+    @include main-font();
     background: $color01;
     
     &::-webkit-scrollbar {
@@ -37,11 +41,11 @@ body {
 
     &__el {
         width: 2.5rem;
-        border: 3px solid;
-        border-radius: 50%;
-        border-color: $color03 $color01;
-        animation: l1 1s infinite;
         aspect-ratio: 1;
+        border: 3px solid;
+        border-color: $color03 $color01;
+        border-radius: 50%;
+        animation: l1 1s infinite;
 
         @keyframes l1 {
             to { transform: rotate(.5turn) }
