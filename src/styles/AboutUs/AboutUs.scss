@@ -2,14 +2,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
+    text-align: center;
     margin-top: 15vh;
     padding: 0 15vw;
-    animation: lazy 0.75s ease-out;
+    animation: lazy 0.75s ease-out; 
 
     @keyframes lazy {
         from {
             opacity: 0;
         }
+
         to {
             opacity: 1;
         }
@@ -36,9 +39,7 @@
     }
 
     &__greeting {
-        text-align: center;
-        margin-bottom: 2rem;
-        font-size: 4rem;
+        font-size: 4.5rem;
         font-weight: 900;
         color: $color03;
 
@@ -59,107 +60,77 @@
         }
     }
 
-    &__text01 {
-        text-align: center;
-        width: 80%;
+    & span:nth-child(2) {
+        font-size: 2rem;
+        font-weight: 700;
+
+        @media (min-width: 1024px) and (max-width: 1279px) {
+            font-size: 1.75rem;
+        }
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+            font-size: 1.75rem;
+        }
+
+        @media (min-width: 600px) and (max-width: 767px) {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        @media (max-width: 599px) {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+    }
+
+    & hr {
+        width: 5%;
+        border: 3px solid $color03;
+        border-radius: 50px;
+    }
+
+    & span:nth-child(4) {
         font-size: 1.75rem;
-        font-weight: 400;
-        color: $color02;
+        font-weight: 300;
+
+        @media (min-width: 1024px) and (max-width: 1279px) {
+            font-size: 1.5rem;
+        }
 
         @media (min-width: 768px) and (max-width: 1023px) {
             font-size: 1.5rem;
         }
 
         @media (min-width: 600px) and (max-width: 767px) {
-            width: 100%;
             font-size: 1.25rem;
         }
 
         @media (max-width: 599px) {
-            width: 100%;
             font-size: 1.25rem;
         }
     }
-
-    &__hr {
-        margin: 3rem 0;
-        width: 100%;
-        border: 2px solid $color03;
-        border-radius: 50px;
-
-        @media (min-width: 600px) and (max-width: 767px) {
-            margin: 2rem 0;
-            width: 100%;
-        }
-
-        @media (max-width: 599px) {
-            margin: 2rem 0;
-            width: 100%;
-        }
-    }
-
-    &__text02 {
-        text-align: center;
-        width: 70%;
-        font-size: 1.25rem;
-        font-weight: 400;
-        color: $color02;
-
-        @media (min-width: 600px) and (max-width: 767px) {
-            width: 100%;
-            font-size: 1.1rem;
-        }
-
-        @media (max-width: 599px) {
-            width: 100%;
-            font-size: 1.1rem;
-        }
-    }
-
+        
     &__telegram {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 3rem;
-        height: 4rem;
-        width: 16rem;
-        font-size: 1.5rem;
-        font-weight: 400;
-        text-decoration: none;
-        color: $color01;
-        background: $color03;
+        margin-top: 1rem;
+        font-size: 3.25rem;
+        color: #24A1DE;
         transition: 0.2s;
-
+        text-decoration: none;
+        
         &:hover {
             opacity: 0.75;
         }
-
+        
         &:active {
             transform: scale(0.95);
         }
 
-        @media (min-width: 1024px) and (max-width: 1279px) {
-            height: 3.5rem;
-            width: 15rem;
-            font-size: 1.5rem;
-        }
-
-        @media (min-width: 768px) and (max-width: 1023px) {
-            height: 3.5rem;
-            width: 12rem;
-            font-size: 1.25rem;
-        }
-
         @media (min-width: 600px) and (max-width: 767px) {
-            height: 3.5rem;
-            width: 12rem;
-            font-size: 1.25rem;
+            font-size: 2.5rem;
         }
 
         @media (max-width: 599px) {
-            height: 3.5rem;
-            width: 12rem;
-            font-size: 1.25rem;
+            font-size: 2.5rem;
         }
     }
 }
