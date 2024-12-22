@@ -1,0 +1,1 @@
+export { default as PragueImage } from './Prague.jpg'

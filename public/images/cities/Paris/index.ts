@@ -1,0 +1,10 @@
+export { default as ParisImage } from './Paris.jpg'
+
+export { EiffelTowerImage } from './EiffelTower'
+export { LouvreImage } from './Louvre'
+export { ArcDeTriompheImage } from './ArcDeTriomphe'
+export { SainteChapelleImage } from './SainteChapelle'
+export { JardinDesTuileriesImage } from './JardinDesTuileries'
+export { PlaceDesVosgesImage } from './PlaceDesVosges'
+export { NotreDameDeParisImage } from './NotreDameDeParis'
+export { JardinDuLuxembourgImage } from './JardinDuLuxembourg'

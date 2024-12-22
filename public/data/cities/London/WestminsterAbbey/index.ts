@@ -1,0 +1,1 @@
+export { WestminsterAbbeyData } from './WestminsterAbbeyData'

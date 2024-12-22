@@ -1,0 +1,1 @@
+export { BuckinghamPalaceData } from './BuckinghamPalaceData'

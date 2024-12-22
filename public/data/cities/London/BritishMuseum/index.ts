@@ -1,0 +1,1 @@
+export { BritishMuseumData } from './BritishMuseumData'

@@ -1,0 +1,1 @@
+export { NationalGalleryData } from './NationalGalleryData'

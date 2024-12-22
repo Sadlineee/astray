@@ -1,0 +1,1 @@
+export { default as SingaporeImage } from './Singapore.jpg'
