@@ -40,7 +40,7 @@ export const PrimaryText = styled.span`
   color: ${({ theme }) => theme.colors.white};
 
   @media ${({ theme }) => theme.media.small} {
-    font-size: 3.25rem;
+    font-size: 3rem;
   }
 `
 
@@ -92,8 +92,6 @@ export const HomeButton = styled(Link)`
 
   @media ${({ theme }) => theme.media.small} {
     margin-top: 4rem;
-    height: 5rem;
-    width: 20rem;
   }
 `
 
@@ -103,7 +101,7 @@ export const RightSection = styled.div`
   width: 58%;
 
   @media ${({ theme }) => theme.media.small} {
-    width: 65%;
+    width: 70%;
   }
 `
 
