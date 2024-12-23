@@ -22,7 +22,7 @@ export const AttractionTitle = styled.span`
   margin: 3rem 0;
   text-align: center;
   font-size: 4.25rem;
-  font-weight: 900;
+  font-weight: 700;
   color: ${({ theme }) => theme.colors.white};
 
   @media ${({ theme }) => theme.media.small} {
@@ -41,7 +41,7 @@ export const AttractionTextBox = styled.div`
 export const AttractionTextTitle = styled.div`
   font-size: 2rem;
   font-weight: 600;
-  color: ${({ theme }) => theme.colors.secondaryLight};
+  color: ${({ theme }) => theme.colors.white};
 `
 
 export const AttractionTextLine = styled.hr`

@@ -91,7 +91,7 @@ export const HomeButton = styled(Link)`
   }
 
   @media ${({ theme }) => theme.media.small} {
-    margin-top: 4rem;
+    margin-top: 3rem;
   }
 `
 
@@ -101,7 +101,7 @@ export const RightSection = styled.div`
   width: 58%;
 
   @media ${({ theme }) => theme.media.small} {
-    width: 70%;
+    width: 68%;
   }
 `
 
