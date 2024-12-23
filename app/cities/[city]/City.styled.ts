@@ -29,7 +29,7 @@ export const AttractionCard = styled(Link)`
   }
 
   @media ${({ theme }) => theme.media.small} {
-    padding: 0.5rem;
+    padding: 0.1rem;
   }
 `
 
@@ -51,6 +51,7 @@ export const AttractionTitle = styled.span`
   color: ${({ theme }) => theme.colors.white};
 
   @media ${({ theme }) => theme.media.small} {
+    margin-top: 1.25rem;
     text-align: center;
   }
 `
@@ -97,5 +98,9 @@ export const AttractionButton = styled.button`
 
   @media ${({ theme }) => theme.media.small} {
     margin-bottom: 1rem;
+  }
+
+  @media ${({ theme }) => theme.media.small} {
+    margin: 2rem 0 1rem 0;
   }
 `

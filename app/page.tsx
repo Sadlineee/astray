@@ -1,9 +1,8 @@
 'use client'
 
-import Image from 'next/image'
 import { Header } from '@/components'
 import { homeImage } from '@images/home'
-import { AnimatedLine, HomeBox, HomeButton, LeftSection, PrimaryText, RightSection, SecondaryText } from './Home.styled'
+import { AnimatedLine, HomeBox, HomeButton, HomeImage, LeftSection, PrimaryText, RightSection, SecondaryText } from './Home.styled'
 
 export default function Home() {
   return (
@@ -21,7 +20,7 @@ export default function Home() {
           <HomeButton href='/cities'>Вперёд!</HomeButton>
         </LeftSection>
         <RightSection>
-          <Image src={homeImage} alt='home' fill={true} quality={70} style={{ filter: 'drop-shadow(-0.6rem -0.6rem 0 #86C232)' }} />
+          <HomeImage src={homeImage} alt='home' fill={true} quality={70} />
         </RightSection>
       </HomeBox>
     </>

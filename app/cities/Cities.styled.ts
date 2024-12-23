@@ -28,7 +28,7 @@ export const CityCard = styled(Link)`
   }
 
   @media ${({ theme }) => theme.media.small} {
-    padding: 0.5rem;
+    padding: 0.1rem;
   }
 `
 
@@ -50,6 +50,7 @@ export const CityTitle = styled.span`
   color: ${({ theme }) => theme.colors.white};
 
   @media ${({ theme }) => theme.media.small} {
+    margin-top: 1.25rem;
     text-align: center;
   }
 `
@@ -66,6 +67,11 @@ export const CityFlag = styled.div`
   aspect-ratio: 1;
   margin-top: 1.75rem;
   height: 2.5rem;
+
+  @media ${({ theme }) => theme.media.small} {
+    margin-top: 1.5rem;
+    height: 2rem;
+  }
 `
 
 export const CityButton = styled.button`
@@ -87,6 +93,6 @@ export const CityButton = styled.button`
   }
 
   @media ${({ theme }) => theme.media.small} {
-    margin-bottom: 1rem;
+    margin: 2rem 0 1rem 0;
   }
 `

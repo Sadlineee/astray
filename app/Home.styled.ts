@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const HomeBox = styled.main`
   display: flex;
@@ -91,6 +92,8 @@ export const HomeButton = styled(Link)`
 
   @media ${({ theme }) => theme.media.small} {
     margin-top: 4rem;
+    height: 5rem;
+    width: 20rem;
   }
 `
 
@@ -100,6 +103,14 @@ export const RightSection = styled.div`
   width: 58%;
 
   @media ${({ theme }) => theme.media.small} {
-    width: 70%;
+    width: 65%;
+  }
+`
+
+export const HomeImage = styled(Image)`
+  filter: drop-shadow(-0.6rem -0.6rem 0 ${({ theme }) => theme.colors.primary});
+
+  @media ${({ theme }) => theme.media.small} {
+    filter: none;
   }
 `
