@@ -21,7 +21,7 @@ export default function Home() {
           <HomeButton href='/cities'>Вперёд!</HomeButton>
         </LeftSection>
         <RightSection>
-          <Image src={homeImage} alt='home' fill={true} quality={70} style={{ filter: 'drop-shadow(-12px -12px 0 #86C232)' }} />
+          <Image src={homeImage} alt='home' fill={true} quality={70} style={{ filter: 'drop-shadow(-0.6rem -0.6rem 0 #86C232)' }} />
         </RightSection>
       </HomeBox>
     </>

@@ -42,6 +42,10 @@ export const AttractionTextTitle = styled.div`
   font-size: 2rem;
   font-weight: 600;
   color: ${({ theme }) => theme.colors.white};
+
+  @media ${({ theme }) => theme.media.small} {
+    font-size: 2.5rem;
+  }
 `
 
 export const AttractionTextLine = styled.hr`
@@ -49,12 +53,20 @@ export const AttractionTextLine = styled.hr`
   margin: 1.5rem 0;
   border: 2px solid ${({ theme }) => theme.colors.primary};
   border-radius: 50px;
+
+  @media ${({ theme }) => theme.media.small} {
+    width: 15%;
+  }
 `
 
 export const AttractionTextContent = styled.p`
   font-size: 1.25rem;
   font-weight: 300;
   color: ${({ theme }) => theme.colors.white};
+
+  @media ${({ theme }) => theme.media.small} {
+    font-size: 1.5rem;
+  }
 `
 
 export const ImageScrollBox = styled.div`

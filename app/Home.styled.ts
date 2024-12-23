@@ -88,10 +88,18 @@ export const HomeButton = styled(Link)`
   &:active {
     transform: scale(0.95);
   }
+
+  @media ${({ theme }) => theme.media.small} {
+    margin-top: 4rem;
+  }
 `
 
 export const RightSection = styled.div`
   position: relative;
   aspect-ratio: 1;
   width: 58%;
+
+  @media ${({ theme }) => theme.media.small} {
+    width: 70%;
+  }
 `

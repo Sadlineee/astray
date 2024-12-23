@@ -9,7 +9,8 @@ export const CitiesBox = styled.main`
   padding: 0 15rem;
 
   @media ${({ theme }) => theme.media.small} {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
     padding: 0 1rem;
   }
 `
@@ -25,6 +26,10 @@ export const CityCard = styled(Link)`
   &:hover {
     cursor: auto;
   }
+
+  @media ${({ theme }) => theme.media.small} {
+    padding: 0.5rem;
+  }
 `
 
 export const CityImage = styled.div`
@@ -32,6 +37,10 @@ export const CityImage = styled.div`
   aspect-ratio: 1;
   height: 16rem;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
+  @media ${({ theme }) => theme.media.small} {
+    height: 14rem;
+  }
 `
 
 export const CityTitle = styled.span`
@@ -39,6 +48,10 @@ export const CityTitle = styled.span`
   font-size: 2rem;
   font-weight: 500;
   color: ${({ theme }) => theme.colors.white};
+
+  @media ${({ theme }) => theme.media.small} {
+    text-align: center;
+  }
 `
 
 export const CityCountry = styled.span`
@@ -71,5 +84,9 @@ export const CityButton = styled.button`
 
   &:active {
     transform: scale(0.95);
+  }
+
+  @media ${({ theme }) => theme.media.small} {
+    margin-bottom: 1rem;
   }
 `
