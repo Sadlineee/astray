@@ -11,12 +11,26 @@ export default function Cities() {
     return citiesData.map((el) => (
       <CityCard href={`cities/${el.link}`} key={el.id}>
         <CityImage>
-          <Image src={el.image} alt={`${el.title}`} fill={true} quality={70} loading='lazy' />
+          <Image 
+            src={el.image} 
+            alt={`${el.title}`} 
+            fill={true} 
+            quality={70} 
+            loading='lazy' 
+            priority
+          />
         </CityImage>
         <CityTitle>{el.title}</CityTitle>
         <CityCountry>{el.country}</CityCountry>
         <CityFlag>
-          <Image src={el.flag} alt={`${el.country}`} fill={true} quality={70} loading='lazy' />
+          <Image 
+            src={el.flag} 
+            alt={`${el.country}`} 
+            fill={true} 
+            quality={70} 
+            loading='lazy'
+            priority
+          />
         </CityFlag>
         <CityButton className={roboto_condensed.className}>ПЕРЕЙТИ</CityButton>
       </CityCard>

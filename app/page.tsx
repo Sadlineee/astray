@@ -20,7 +20,13 @@ export default function Home() {
           <HomeButton href='/cities'>Вперёд!</HomeButton>
         </LeftSection>
         <RightSection>
-          <HomeImage src={homeImage} alt='home' fill={true} quality={70} />
+          <HomeImage 
+            src={homeImage} 
+            alt='home' 
+            fill={true} 
+            quality={70} 
+            priority
+          />
         </RightSection>
       </HomeBox>
     </>

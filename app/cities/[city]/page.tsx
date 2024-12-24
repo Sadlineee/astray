@@ -34,7 +34,14 @@ export default function City() {
       {cityData.map((el) => (
         <AttractionCard href={`${city}/${el.link}`} key={el.id}>
           <AttractionImage>
-            <Image src={el.image} alt={`${el.title}`} fill={true} quality={70} loading='lazy' />
+            <Image 
+              src={el.image} 
+              alt={`${el.title}`} 
+              fill={true} 
+              quality={70} 
+              loading='lazy' 
+              priority
+            />
           </AttractionImage>
           <AttractionTitle>{el.title}</AttractionTitle>
           <AttractionLine /> 

@@ -47,7 +47,14 @@ export default function Attraction() {
             {[...el.image, ...el.image ].map((img, index) => ( 
               <ImageScrollElement key={`${el.id}-${index}`}> 
                 <AttractionImage>
-                  <Image src={img} alt={`${el.title}`} fill={true} quality={70} />
+                  <Image 
+                    src={img} 
+                    alt={`${el.title}`} 
+                    fill={true} 
+                    quality={70} 
+                    loading='lazy'
+                    priority
+                  />
                 </AttractionImage> 
               </ImageScrollElement> 
             ))} 
