@@ -1,0 +1,1 @@
+export { CopacabanaBeachData } from './CopacabanaBeachData'

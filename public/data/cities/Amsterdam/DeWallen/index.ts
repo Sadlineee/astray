@@ -1,0 +1,1 @@
+export { DeWallenData } from './DeWallenData'

@@ -1,0 +1,1 @@
+export { MoscowStateUniversityData } from './MoscowStateUniversityData'

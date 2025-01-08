@@ -1,0 +1,1 @@
+export { VanGoghMuseumData } from './VanGoghMuseumData'

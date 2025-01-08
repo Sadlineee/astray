@@ -1,0 +1,10 @@
+export { ParisData } from './ParisData'
+
+export { EiffelTowerData } from './EiffelTower'
+export { LouvreData } from './Louvre'
+export { ArcDeTriompheData } from './ArcDeTriomphe'
+export { SainteChapelleData } from './SainteChapelle'
+export { JardinDesTuileriesData } from './JardinDesTuileries'
+export { PlaceDesVosgesData } from './PlaceDesVosges'
+export { NotreDameDeParisData } from './NotreDameDeParis'
+export { JardinDuLuxembourgData } from './JardinDuLuxembourg'

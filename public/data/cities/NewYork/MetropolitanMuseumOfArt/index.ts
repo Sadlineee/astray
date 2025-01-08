@@ -1,0 +1,1 @@
+export { MetropolitanMuseumOfArtData } from './MetropolitanMuseumOfArtData'

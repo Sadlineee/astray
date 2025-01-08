@@ -1,0 +1,1 @@
+export { RijksmuseumData } from './RijksmuseumData'

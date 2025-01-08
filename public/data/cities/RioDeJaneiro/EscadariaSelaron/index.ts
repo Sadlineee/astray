@@ -1,0 +1,1 @@
+export { EscadariaSelaronData } from './EscadariaSelaronData'

@@ -1,0 +1,1 @@
+export { PiazzaNavonaData } from './PiazzaNavonaData'

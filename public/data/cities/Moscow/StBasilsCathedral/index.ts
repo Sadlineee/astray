@@ -1,0 +1,1 @@
+export { StBasilsCathedralData } from './StBasilsCathedralData'

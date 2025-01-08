@@ -1,0 +1,1 @@
+export { StatueOfLibertyData } from './StatueOfLibertyData'
