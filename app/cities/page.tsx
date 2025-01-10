@@ -22,10 +22,7 @@ export default function Cities() {
           'addressLocality': el.title,
           'addressCountry': el.country
         },
-        'url': {
-          '@type': 'URL',
-          'value': `https://astray.site/cities/${el.link}`
-        }
+        'url': `https://astray.site/cities/${el.link}`
       }
     }))
   }
