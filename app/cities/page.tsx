@@ -23,7 +23,10 @@ export default function Cities() {
           'addressCountry': el.country
         },
         'url': `https://astray.site/cities/${el.link}`,
-        'image': el.image
+        'image': {
+          '@type': 'ImageObject',
+          'url': el.image
+        }
       }
     }))
   }
