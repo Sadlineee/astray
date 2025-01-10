@@ -2,11 +2,32 @@
 
 import { useMemo } from 'react'
 import Image from 'next/image'
+import { Schema } from '@/components'
 import { citiesData } from '@data/cities/citiesData'
 import { roboto_condensed } from '@/fonts/fonts'
 import { CitiesBox, CityButton, CityCard, CityCountry, CityFlag, CityImage, CityTitle } from './Cities.styled'
 
 export default function Cities() {
+  const schemaData = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    'itemListElement': citiesData.map((el) => ({
+      '@type': 'ListItem',
+      'position': el.id,
+      'item': {
+        '@type': 'Place',
+        'name': el.title,
+        'address': {
+          '@type': 'PostalAddress',
+          'addressLocality': el.title,
+          'addressCountry': el.country
+        },
+        'url': `https://astray.site/cities/${el.link}`,
+        'image': el.image
+      }
+    }))
+  }
+
   const cities = useMemo(() => {
     return citiesData.map((el) => (
       <CityCard href={`cities/${el.link}`} key={el.id}>
@@ -38,6 +59,7 @@ export default function Cities() {
   return (
     <CitiesBox>
       {cities}
+      <Schema schemaData={ schemaData } />
     </CitiesBox>
   )
 }

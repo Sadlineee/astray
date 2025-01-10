@@ -14,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: 'https://astray.site/cities',
       lastModified: new Date(),
       changeFrequency: 'yearly',
-      priority: 0.8
+      priority: 0.9
     },
 
     {
@@ -78,6 +78,90 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.8
+    },
+
+    {
+      url: 'https://astray.site/cities/London/TowerBridge',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.7
+    },
+
+    {
+      url: 'https://astray.site/cities/London/BuckinghamPalace',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.7
+    },
+
+    {
+      url: 'https://astray.site/cities/London/BritishMuseum',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.7
+    },
+
+    {
+      url: 'https://astray.site/cities/London/PalaceOfWestminster',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.7
+    },
+
+    {
+      url: 'https://astray.site/cities/London/TowerOfLondon',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.7
+    },
+
+    {
+      url: 'https://astray.site/cities/London/HydePark',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.7
+    },
+
+    {
+      url: 'https://astray.site/cities/London/LondonEye',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.7
+    },
+
+    {
+      url: 'https://astray.site/cities/London/NationalGallery',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.7
+    },
+
+    {
+      url: 'https://astray.site/cities/London/Harrods',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.7
+    },
+    
+    {
+      url: 'https://astray.site/cities/London/SkyGarden',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.7
+    },
+
+    {
+      url: 'https://astray.site/cities/London/TheShard',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.7
+    },
+
+    {
+      url: 'https://astray.site/cities/London/WestminsterAbbey',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.7
     }
   ]
 }
