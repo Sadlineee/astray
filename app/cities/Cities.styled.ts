@@ -35,6 +35,7 @@ export const CityCard = styled(Link)`
 export const CityImage = styled.div`
   position: relative;
   aspect-ratio: 1;
+  margin-top: 2rem;
   height: 16rem;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   background-color: ${({ theme }) => theme.colors.white};
