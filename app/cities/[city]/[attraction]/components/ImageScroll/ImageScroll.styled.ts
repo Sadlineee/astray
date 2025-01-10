@@ -5,6 +5,7 @@ export const AttractionImage = styled.div`
   aspect-ratio: 1;
   height: 100%;
   border: 2px solid ${({ theme }) => theme.colors.bg};
+  background-color: ${({ theme }) => theme.colors.white};
 `
 
 export const ImageScrollBox = styled.div`

@@ -38,6 +38,7 @@ export const AttractionImage = styled.div`
   aspect-ratio: 1;
   height: 16rem;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background-color: ${({ theme }) => theme.colors.white};
 
   @media ${({ theme }) => theme.media.small} {
     height: 14rem;
